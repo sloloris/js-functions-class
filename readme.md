@@ -147,7 +147,7 @@ console.log(newArr);
 
 ```
 
-Iterating over an array with map function:
+Iterating over an array with map iterator:
 ```javascript
 
 var arr = [4, 5, 6, 7, 8];
@@ -159,7 +159,24 @@ arr.map(function(el){
 console.log(newArr);
 
 ```
+With map, you go over an array and always get back an array of the same length as the original.
 
+Iterating over an array with filter iterator:
+```javascript
+
+var nestedData = {
+    numberData: {
+        primeNumbers: [2,3,5,7,11],
+        fibonnaci: [1,1,2,3,5,8,13]
+    }
+}
+
+var evenNumbers = nestedData.numberData.fibonnaci.filter(function(num) {
+    return num % 2 == 0;
+}) // returns evenNumbers as array [2, 8]
+
+```
+Filter creates a new array containing only the items that pass the filter.
 
 
 
