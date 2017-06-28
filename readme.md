@@ -13,7 +13,7 @@ var sayHello = function(name) {
 };
 ```
 
-* hoisting - when you define a var before you define it, ex. at the top of a file when it is defined later in the code *
+_hoisting - when you define a var before you define it, ex. at the top of a file when it is defined later in the code_
 ```javascript
 var name = "Tim";
 
@@ -37,3 +37,18 @@ function sayName() {
 
 sayName(); // returns "Tim" - variable is only scoped inside function if the var name is used
 ```
+
+### IIFE - "Immediately Invoked Function Expression"
+
+```javascript
+var result = (function() {
+    return {
+        name: "Isabelle",
+        printAge: function() {
+            console.log(26);
+        }
+    };
+})(); // these final parentheses immediately call function
+```
+
+
