@@ -94,7 +94,7 @@ var printNameAge = (function(fname, lname, age) {
     }; 
 })("Isabelle", "M", 26);
 
-printNameAge.info(); // returns string 
+printNameAge.info(); // returns string "Isabelle M, Age 26" 
 
 ```
 
@@ -156,7 +156,7 @@ arr.map(function(el){
     newArr.push( el + 1 );
 });
 
-console.log(newArr);
+console.log(newArr); // prints [5, 6, 7, 8, 9]
 
 ```
 With map, you go over an array and always get back an array of the same length as the original.
