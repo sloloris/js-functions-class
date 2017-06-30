@@ -3,9 +3,9 @@ _Everything covered here applies to ES5; ES6 introduces extend to cover prototyp
 [See here for the instructor's repo.](https://github.com/parkerlewis9/Prototypal-Inheritance)
 
 ### Prototype Chain
-All objects in JS have a hidden __proto__ property, or the object's prototype, which points to another object containing other methods applicable to the first object. The protoype chain refers to the way each object can call on the methods of its prototype object.
+All objects in JS have a hidden ```__proto__``` property, or the object's prototype, which points to another object containing other methods applicable to the first object. The protoype chain refers to the way each object can call on the methods of its prototype object.
 
-Note: the object at the top of the prototype chain's __proto__ points to null.
+Note: the object at the top of the prototype chain's ```__proto__``` points to null.
 
 ### 'new' keyword
 2 common ways to create objects:
@@ -22,13 +22,13 @@ var isabelle = new Object()
 // initiated object is empty
 
 ```
-This sets up the prototype chain for us by setting up the __proto__ to point to wherever Object.prototype is pointing to. So here: isabelle.prototype === Object.prototype (same location in memory!)
-Note: All objects have a .prototype method (differentiated from __proto__ prototype)
+This sets up the prototype chain for us by setting up the ```__proto__``` to point to wherever Object.prototype is pointing to. So here: isabelle.prototype === Object.prototype (same location in memory!)
+Note: All objects have a .prototype method (differentiated from ```__proto__``` prototype)
 
 ### Object.create
-To extend an object's properties to another object, set __proto__ on the latter's constructor function to the former using Object.create.
+To extend an object's properties to another object, set ```__proto__``` on the latter's constructor function to the former using Object.create.
 
-Object.create allows us to create an empty object and set its __proto__ property. 
+Object.create allows us to create an empty object and set its ```__proto__``` property. 
 
 ```javascript
 
